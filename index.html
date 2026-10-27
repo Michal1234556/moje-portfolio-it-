@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje portfolio IT</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #172554;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #123b69;
+      color: white;
+      text-align: center;
+      padding: 35px 18px;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+    }
+
+    main {
+      width: min(900px, 92%);
+      margin: 25px auto;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #00000010;
+    }
+
+    h2 {
+      color: #1763a6;
+    }
+
+    button {
+      background: #1763a6;
+      color: white;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:focus-visible {
+      outline: 3px solid #f59e0b;
+    }
+
+    #wynik {
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #475569;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Moje portfolio IT</h1>
+    <p>Sieci komputerowe, cyberbezpieczeństwo
+      i programowanie</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>O projekcie</h2>
+      <p>
+        To moja strona internetowa stworzona
+        z wykorzystaniem HTML, CSS i JavaScript.
+        Projekt rozwijam na smartfonie.
+      </p>
+    </section>
+
+    <section>
+      <h2>Sieci komputerowe</h2>
+      <p>
+        Poznaję konfigurację urządzeń sieciowych,
+        adresację IP oraz zasady działania sieci.
+      </p>
+    </section>
+
+    <section>
+      <h2>Cyberbezpieczeństwo</h2>
+      <p>
+        Poznaję sposoby ochrony danych,
+        bezpieczne hasła i zagrożenia internetowe.
+      </p>
+    </section>
+
+    <section>
+      <h2>Programowanie</h2>
+      <p>
+        Uczę się tworzyć responsywne strony
+        internetowe działające na smartfonach
+        i komputerach.
+      </p>
+
+      <button onclick="pokazKomunikat()">
+        Sprawdź działanie strony
+      </button>
+
+      <p id="wynik" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    Moje portfolio IT | Projekt edukacyjny
+  </footer>
+
+  <script>
+    function pokazKomunikat() {
+      document.getElementById("wynik").textContent =
+        "Działa! Moja strona obsługuje JavaScript.";
+    }
+  </script>
+</body>
+</html>
